@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+:root {
+  --color-primary: #023047;
+  --color-secondary: #219ebc;
+  --color-accent: #8ecae6;
+  --width-min: 695px;
+  --width-max: 100%;
+  --height-min: 250px;
+  --height-max: 40%;
+  --font-size-quote: 1.2rem;
+  --font-size-icon: 3rem;
+  --font-size-author: 1rem;
+  --color-font-primary: #ffffff;
+  --color-font-secondary: #c7c7c7;
+}
+
+/*  Container  */
+.wp-block-create-block-random-quotes-container {
+  width: var(--width-min);
+  height: var(--height-min);
+  padding: 38px;
+  background-color: var(--color-primary);
+  box-shadow: 1px 1px 10px 1px #3A3A3A, 0px 0px 5px 0px #3A3A3A;
+}
+
+/*  Quote  */
+.wp-block-create-block-random-quotes-quote span,
+.wp-block-create-block-random-quotes-quote p {
+  color: var(--color-font-primary);
+}
+
+.wp-block-create-block-random-quotes-quote span {
+  font-size: var(--font-size-icon);
+}
+
+.wp-block-create-block-random-quotes-quote p {
+  margin: 10px 0 0 calc(2rem + 20px);
+  text-align: justify;
+  font-size: var(--font-size-quote);
+  color: var(--color-font-primary);
+}
+
+/*  Author  */
+.wp-block-create-block-random-quotes-author p {
+  text-align: right;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: var(--font-size-author);
+  color: var(--color-font-secondary);
+}
+
+.wp-block-create-block-random-quotes-author p::before {
+  content: "—";
+  margin-right: 13px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

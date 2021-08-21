@@ -1,0 +1,26 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/dark-quote",
+	"version": "0.1.0",
+	"title": "Dark Quote",
+	"category": "widgets",
+	"icon": "format-quote",
+	"description": "Beautiful dark quote block.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "dark-quote",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+	  "quote": {
+		"type": "string",
+		"default": "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+	  },
+	  "author": {
+		"type": "string",
+		"default": "Lorem"
+	  }
+	}
+}
